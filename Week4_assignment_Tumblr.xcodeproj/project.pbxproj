@@ -21,6 +21,7 @@
 		CE2E37361DCC7540000D5CAD /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37341DCC7540000D5CAD /* BaseTransition.swift */; };
 		CE2E37371DCC7540000D5CAD /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37351DCC7540000D5CAD /* FadeTransition.swift */; };
 		CE2E37391DCC754D000D5CAD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37381DCC754D000D5CAD /* Common.swift */; };
+		CE2E373B1DCD7E98000D5CAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E373A1DCD7E98000D5CAD /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CE2E37341DCC7540000D5CAD /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		CE2E37351DCC7540000D5CAD /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		CE2E37381DCC754D000D5CAD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CE2E373A1DCD7E98000D5CAD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				CE2E37161DCC606A000D5CAD /* AppDelegate.swift */,
 				CE2E37181DCC606A000D5CAD /* ViewController.swift */,
+				CE2E373A1DCD7E98000D5CAD /* LoginViewController.swift */,
 				CE2E371A1DCC606A000D5CAD /* Main.storyboard */,
 				CE2E37321DCC7441000D5CAD /* ComposeViewController.swift */,
 				CE2E372A1DCC6A20000D5CAD /* HomeViewController.swift */,
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2E373B1DCD7E98000D5CAD /* LoginViewController.swift in Sources */,
 				CE2E37311DCC6A3D000D5CAD /* TrendingViewController.swift in Sources */,
 				CE2E372D1DCC6A27000D5CAD /* SearchViewController.swift in Sources */,
 				CE2E37191DCC606A000D5CAD /* ViewController.swift in Sources */,
