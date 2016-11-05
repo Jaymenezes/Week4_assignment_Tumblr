@@ -21,8 +21,9 @@ class TabBarViewController: UIViewController {
     var selectedIndex: Int = 0
     var fadeTransition: FadeTransition!
 
+    @IBOutlet weak var exploreImage: UIImageView!
+    var exploreImageOriginalY: CGFloat!
     
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,24 @@ class TabBarViewController: UIViewController {
         
         buttons[selectedIndex].isSelected = true
         didPressTabBar(buttons[selectedIndex])
+        
+        
+        exploreImageOriginalY = exploreImage.frame.origin.y
+        
+        
+        self.exploreImage.frame.origin.y = self.exploreImageOriginalY + 5
+        
+        UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat, .autoreverse], animations:{
+          
+            self.exploreImage.frame.origin.y = self.exploreImageOriginalY + 5
+            
+        }){ (Bool) in
+             UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat, .autoreverse], animations:{
+                self.exploreImage.frame.origin.y = self.exploreImageOriginalY
+
+            })
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,14 +65,7 @@ class TabBarViewController: UIViewController {
     
     @IBAction func DidPressCompose(_ sender: UIButton) {
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//         composeViewController = storyboard.instantiateViewController(withIdentifier: "ComposeViewController")
-//            addChildViewController(composeViewController)
-//        composeViewController.view.frame = contentView.bounds
-//        contentView.addSubview(composeViewController.view)
-//        composeViewController.didMove(toParentViewController: self)
-//        
-       
-        
+
 
         
     }
@@ -81,6 +93,20 @@ class TabBarViewController: UIViewController {
             vc.view.frame = contentView.bounds
             contentView.addSubview(vc.view)
             vc.didMove(toParentViewController: self)
+            
+            if selectedIndex == 1 {
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.exploreImage.alpha = 0
+
+                })
+                
+            } else {
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.exploreImage.alpha = 1
+                    
+                })
+                
+            }
 
     }
     
