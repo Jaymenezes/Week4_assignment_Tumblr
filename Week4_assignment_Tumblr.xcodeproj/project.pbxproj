@@ -17,6 +17,10 @@
 		CE2E372D1DCC6A27000D5CAD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E372C1DCC6A27000D5CAD /* SearchViewController.swift */; };
 		CE2E372F1DCC6A34000D5CAD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E372E1DCC6A34000D5CAD /* AccountViewController.swift */; };
 		CE2E37311DCC6A3D000D5CAD /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37301DCC6A3D000D5CAD /* TrendingViewController.swift */; };
+		CE2E37331DCC7441000D5CAD /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37321DCC7441000D5CAD /* ComposeViewController.swift */; };
+		CE2E37361DCC7540000D5CAD /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37341DCC7540000D5CAD /* BaseTransition.swift */; };
+		CE2E37371DCC7540000D5CAD /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37351DCC7540000D5CAD /* FadeTransition.swift */; };
+		CE2E37391DCC754D000D5CAD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E37381DCC754D000D5CAD /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		CE2E372C1DCC6A27000D5CAD /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		CE2E372E1DCC6A34000D5CAD /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE2E37301DCC6A3D000D5CAD /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		CE2E37321DCC7441000D5CAD /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		CE2E37341DCC7540000D5CAD /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		CE2E37351DCC7540000D5CAD /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		CE2E37381DCC754D000D5CAD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 				CE2E37161DCC606A000D5CAD /* AppDelegate.swift */,
 				CE2E37181DCC606A000D5CAD /* ViewController.swift */,
 				CE2E371A1DCC606A000D5CAD /* Main.storyboard */,
+				CE2E37321DCC7441000D5CAD /* ComposeViewController.swift */,
 				CE2E372A1DCC6A20000D5CAD /* HomeViewController.swift */,
 				CE2E372C1DCC6A27000D5CAD /* SearchViewController.swift */,
 				CE2E372E1DCC6A34000D5CAD /* AccountViewController.swift */,
@@ -75,6 +84,9 @@
 				CE2E371D1DCC606A000D5CAD /* Assets.xcassets */,
 				CE2E371F1DCC606A000D5CAD /* LaunchScreen.storyboard */,
 				CE2E37221DCC606A000D5CAD /* Info.plist */,
+				CE2E37381DCC754D000D5CAD /* Common.swift */,
+				CE2E37341DCC7540000D5CAD /* BaseTransition.swift */,
+				CE2E37351DCC7540000D5CAD /* FadeTransition.swift */,
 			);
 			path = Week4_assignment_Tumblr;
 			sourceTree = "<group>";
@@ -154,7 +166,11 @@
 				CE2E37311DCC6A3D000D5CAD /* TrendingViewController.swift in Sources */,
 				CE2E372D1DCC6A27000D5CAD /* SearchViewController.swift in Sources */,
 				CE2E37191DCC606A000D5CAD /* ViewController.swift in Sources */,
+				CE2E37331DCC7441000D5CAD /* ComposeViewController.swift in Sources */,
+				CE2E37391DCC754D000D5CAD /* Common.swift in Sources */,
+				CE2E37361DCC7540000D5CAD /* BaseTransition.swift in Sources */,
 				CE2E372F1DCC6A34000D5CAD /* AccountViewController.swift in Sources */,
+				CE2E37371DCC7540000D5CAD /* FadeTransition.swift in Sources */,
 				CE2E37291DCC6460000D5CAD /* TabBarViewController.swift in Sources */,
 				CE2E37171DCC606A000D5CAD /* AppDelegate.swift in Sources */,
 				CE2E372B1DCC6A20000D5CAD /* HomeViewController.swift in Sources */,
