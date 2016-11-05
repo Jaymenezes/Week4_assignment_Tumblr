@@ -197,7 +197,7 @@
                                 <state key="normal" image="chat_icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WQA-Bl-Uin">
-                                <rect key="frame" x="0.0" y="535" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="618" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nevermind"/>
                                 <connections>
@@ -207,6 +207,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.16078431372549021" green="0.21176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="gc9-yW-pHr" id="KwF-TL-t0H"/>
+                        <outlet property="hiButton" destination="lPu-qS-cta" id="HDF-Zm-ObC"/>
+                        <outlet property="linkButton" destination="waS-1K-E1P" id="e9x-Dh-2rx"/>
+                        <outlet property="photoButton" destination="zbA-7P-88a" id="435-fQ-U5G"/>
+                        <outlet property="quoteButton" destination="6vn-ME-Rof" id="sd0-8S-uTx"/>
+                        <outlet property="textButton" destination="l4O-Sj-R8J" id="UHT-5T-QS7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCR-AO-X9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
