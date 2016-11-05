@@ -129,8 +129,13 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.21176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="homeImageView" destination="mXE-cC-dGs" id="NRn-fE-12W"/>
+                        <outlet property="homeScrollView" destination="qWp-v0-hxe" id="lHv-J0-fal"/>
+                        <outlet property="homeSpinner" destination="yst-hu-qW1" id="zHz-xZ-UjW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuy-AO-7HR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,13 +194,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="KN4-af-DI9">
+                                <rect key="frame" x="-4" y="0.0" width="379" height="614"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="search_feed" id="vI0-aK-Kbe">
+                                        <rect key="frame" x="2" y="0.0" width="375" height="614"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="loading-1" id="lMt-Sw-YlQ">
                                 <rect key="frame" x="138" y="318" width="98" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="search_feed" id="vI0-aK-Kbe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="614"/>
-                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14901960784313725" green="0.21176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
@@ -203,6 +214,7 @@
                     <connections>
                         <outlet property="animationImageSequence" destination="lMt-Sw-YlQ" id="K4E-Ok-pjj"/>
                         <outlet property="searchFeed" destination="vI0-aK-Kbe" id="Gjd-X5-kxk"/>
+                        <outlet property="searchScroll" destination="KN4-af-DI9" id="V5h-LJ-ZOV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lin-32-V8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -283,19 +295,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="account" id="qI4-BO-0rp">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="2y9-XB-cu4">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="account" id="qI4-BO-0rp">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="616"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.21176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="accountImage" destination="qI4-BO-0rp" id="i6v-io-IhJ"/>
+                        <outlet property="accountScroll" destination="2y9-XB-cu4" id="ztk-sL-AMm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lgy-d5-vFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="992"/>
+            <point key="canvasLocation" x="604.5" y="991.5"/>
         </scene>
         <!--Trending View Controller-->
         <scene sceneID="rjN-Kf-KRT">
@@ -316,8 +338,12 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.16078431372549021" green="0.21176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="trendingImage" destination="uVO-xY-dzL" id="uCW-w3-tl8"/>
+                        <outlet property="trendingScroll" destination="HKv-ub-5pM" id="bew-l0-XAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhj-Mk-JHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

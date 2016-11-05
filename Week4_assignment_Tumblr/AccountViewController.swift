@@ -10,8 +10,11 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
+    @IBOutlet weak var accountImage: UIImageView!
+    @IBOutlet weak var accountScroll: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        accountScroll.contentSize = CGSize(width: 375, height: 630)
 
         // Do any additional setup after loading the view.
     }

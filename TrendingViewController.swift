@@ -10,8 +10,11 @@ import UIKit
 
 class TrendingViewController: UIViewController {
 
+    @IBOutlet weak var trendingScroll: UIScrollView!
+    @IBOutlet weak var trendingImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        trendingScroll.contentSize = trendingImage.frame.size
 
         // Do any additional setup after loading the view.
     }

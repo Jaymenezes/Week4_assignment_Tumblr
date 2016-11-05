@@ -11,6 +11,7 @@ import UIKit
 class SearchViewController: UIViewController {
     var searchViewController: UIViewController!
 
+    @IBOutlet weak var searchScroll: UIScrollView!
     @IBOutlet weak var searchFeed: UIImageView!
     @IBOutlet weak var animationImageSequence: UIImageView!
     var loading_1: UIImage!
@@ -52,9 +53,9 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        searchViewController = storyboard.instantiateViewController(withIdentifier: "SearchViewController")
-
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        searchViewController = storyboard.instantiateViewController(withIdentifier: "SearchViewController")
+        searchScroll.contentSize = CGSize(width: 375, height: 630)
         
       
 
@@ -68,9 +69,9 @@ class SearchViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        searchViewController.willMove(toParentViewController: nil)
-        searchViewController.view.removeFromSuperview()
-        searchViewController.removeFromParentViewController()
+//        searchViewController.willMove(toParentViewController: nil)
+//        searchViewController.view.removeFromSuperview()
+//        searchViewController.removeFromParentViewController()
         
         
     }
