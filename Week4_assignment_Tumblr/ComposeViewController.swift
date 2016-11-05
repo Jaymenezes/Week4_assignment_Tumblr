@@ -53,45 +53,77 @@ class ComposeViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
-            
-            delay(0.1, closure: { 
+
+             UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseInOut, animations: {
                 self.textButton.frame.origin.y = self.textButtonOriginalY
 
             })
-            self.photoButton.frame.origin.y = self.photoButtonOriginalY
-            self.linkButton.frame.origin.y = self.linkButtonOriginalY
-            self.quoteButton.frame.origin.y = self.quoteButtonOriginalY
-            self.hiButton.frame.origin.y = self.hiButtonOriginalY
-            self.cameraButton.frame.origin.y = self.cameraButtonOriginalY
+              UIView.animate(withDuration: 0.5, delay: 0.4, options: .curveEaseInOut, animations: {
+                self.photoButton.frame.origin.y = self.photoButtonOriginalY
+
+              })
+            UIView.animate(withDuration: 0.5, delay: 0.3, options: .curveEaseInOut, animations: {
+                self.linkButton.frame.origin.y = self.linkButtonOriginalY
+                
+            })
+            UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseInOut, animations: {
+                self.quoteButton.frame.origin.y = self.quoteButtonOriginalY
+                
+            })
+            UIView.animate(withDuration: 0.5, delay: 0.6, options: .curveEaseInOut, animations: {
+                self.hiButton.frame.origin.y = self.hiButtonOriginalY
+                
+            })
+            UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseInOut, animations: {
+                self.cameraButton.frame.origin.y = self.cameraButtonOriginalY
+                
+            
         
         })
 
-//        self.textButton.frame.origin.y = self.textButtonOriginalY
-//        self.photoButton.frame.origin.y = self.photoButtonOriginalY
-//        self.linkButton.frame.origin.y = self.linkButtonOriginalY
-//        self.quoteButton.frame.origin.y = self.quoteButtonOriginalY
-//        self.hiButton.frame.origin.y = self.hiButtonOriginalY
-//        self.cameraButton.frame.origin.y = self.cameraButtonOriginalY
-        
+
         
         print("viewAppeared")
-        
         
         
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
-        
 
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidLoad()
+        
+        UIView.animate(withDuration: 0.5, delay: 0.7, options: .curveEaseInOut, animations: {
+            self.textButton.frame.origin.y = self.textButtonOriginalY - 600
+            
+        })
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseInOut, animations: {
+            self.photoButton.frame.origin.y = self.photoButtonOriginalY - 600
+            
+        })
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseInOut, animations: {
+            self.linkButton.frame.origin.y = self.linkButtonOriginalY - 600
+            
+        })
+        UIView.animate(withDuration: 0.5, delay: 0.3, options: .curveEaseInOut, animations: {
+            self.quoteButton.frame.origin.y = self.quoteButtonOriginalY - 600
+            
+        })
+        UIView.animate(withDuration: 0.5, delay: 0.4, options: .curveEaseInOut, animations: {
+            self.hiButton.frame.origin.y = self.hiButtonOriginalY - 600
+            
+        })
+        UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseInOut, animations: {
+            self.cameraButton.frame.origin.y = self.cameraButtonOriginalY - 600
+            
+            
+            
+        })
 
         
     }
