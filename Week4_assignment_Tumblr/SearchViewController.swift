@@ -22,6 +22,8 @@ class SearchViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.animationImageSequence.alpha = 1
+
         searchFeed.alpha = 0
         loading_1 = UIImage(named: "loading-1")
         loading_2 = UIImage(named: "loading-2")
@@ -38,7 +40,7 @@ class SearchViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        UIView.animate(withDuration: 0.3, delay: 1.6, options: [], animations:{
+        UIView.animate(withDuration: 0.2, delay: 1.4, options: [], animations:{
             
             self.animationImageSequence.alpha = 0
         }){ (Bool) in
