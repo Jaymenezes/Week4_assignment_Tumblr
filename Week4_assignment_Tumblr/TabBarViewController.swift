@@ -84,6 +84,7 @@ class TabBarViewController: UIViewController {
             composeViewController.willMove(toParentViewController: nil)
             composeViewController.view.removeFromSuperview()
             composeViewController.removeFromParentViewController()
+    
             
             //Setting up the selected button on the Tab bar
             selectedIndex = sender.tag
