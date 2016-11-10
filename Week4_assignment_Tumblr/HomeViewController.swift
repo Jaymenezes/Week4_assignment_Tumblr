@@ -32,7 +32,6 @@ class HomeViewController: UIViewController {
         UIView.animate(withDuration: 5, delay: 0, options: [.repeat, .curveLinear], animations:{
             self.homeSpinner.transform = CGAffineTransform(rotationAngle: CGFloat(180 * M_PI / 180))
 
-            
         })
         
     
